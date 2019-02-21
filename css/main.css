@@ -1,0 +1,157 @@
+body {
+    background: #2f323a;
+    background-image: url(../photos/background/background.png);
+    background-size: contain;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(201, 201, 201);
+    text-align: center;
+}
+
+.container {
+    margin: 5vw;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: minmax(5vh, max-content);
+    grid-template-areas: "navW" "mainW" "footW";
+    grid-gap: 5vh;
+    z-index: 5;
+}
+
+.navWrap {
+
+    grid-area: navW;
+    text-align: left;
+}
+
+.mainWrap {
+  margin-top:2vh; 
+    grid-area: mainW;
+}
+
+
+
+#introText {
+    font-size: .7rem;
+    margin-left: 45vw;
+}
+.titleText {
+  font-size: 1.8em;
+}
+
+
+.titleText p{
+margin-left: -30vw;}
+.footWrap {
+    grid-area: footW;
+}
+
+.headWrap ul {
+    margin-left: 10vw;
+}
+
+.headWrap ul li {
+    display: inline;
+    list-style: none;
+}
+
+#moon {
+  opacity: .5;
+    position: fixed;
+    margin-left: 36vw;
+    margin-top: -25vh;
+    z-index:-8 ;
+}
+
+.mainGallery img {
+    width: 45vw;
+    opacity: .87;
+    opacity: .6;
+
+}
+
+
+
+.mainGallery {
+  margin-top:20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainGallery p{
+  width:60vw;
+
+margin-bottom: 5vh;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(32, 32, 32, 0.979);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a:nth-child(2){
+margin-left: 5vw;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-left: 10vw;
+}
+
+#navIcon {
+    position: absolute;
+    margin-left: 0vw;
+}
+
+.sidenav span img {
+    width: 5vw;
+    height: auto;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.socialNav{
+  opacity: .5;
+  margin-left:80vw;
+
+}
+
+.socialNav img{
+  margin-left:2vw;
+
+
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
